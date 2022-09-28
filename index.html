@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- description  -->
+    <meta name="author" content="Khondaker Tanvir Mahmud" />
+    <meta name="description" content="Assessment Done by KTM" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper js  -->
+
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom styles  -->
+    <link rel="stylesheet" href="style.css" />
+    <title>PRADA Fashion</title>
+  </head>
+  <body>
+    <!-- header section  -->
+    <header id="header">
+      <nav class="navbar">
+        <h1><img src="./assets/logo.png" alt="logo" /></h1>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-links">Men</a></li>
+          <li class="nav-item"><a href="#" class="nav-links">Women</a></li>
+          <li class="nav-item"><a href="#" class="nav-links">Kids</a></li>
+          <li class="nav-item"><a href="#" class="nav-links">Shop</a></li>
+          <li class="nav-item"><a href="#" class="nav-links">Contact</a></li>
+        </ul>
+        <div class="SnU">
+          <div class="search-top">
+            <input type="text" placeholder="Search here" /><span
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+          </div>
+          <div class="userAcc">
+            <span class="fav-list"><i class="fa-regular fa-heart"></i></span>
+            <span class="cart-list"
+              ><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.73804 23.7778C9.73905 23.7778 10.5505 22.9663 10.5505 21.9653C10.5505 20.9643 9.73905 20.1528 8.73804 20.1528C7.73702 20.1528 6.92554 20.9643 6.92554 21.9653C6.92554 22.9663 7.73702 23.7778 8.73804 23.7778Z" fill="#272727"/>
+                <path d="M19.75 23.7778C20.751 23.7778 21.5625 22.9663 21.5625 21.9653C21.5625 20.9643 20.751 20.1528 19.75 20.1528C18.749 20.1528 17.9375 20.9643 17.9375 21.9653C17.9375 22.9663 18.749 23.7778 19.75 23.7778Z" fill="#272727"/>
+                <path d="M24.6478 2.32592C24.5728 2.23351 24.4783 2.15886 24.371 2.10732C24.2638 2.05579 24.1465 2.02865 24.0275 2.02786H7.25581L7.77942 3.63897H22.9722L20.8214 13.3056H8.73803L5.05664 1.64925C5.01682 1.52557 4.94767 1.41335 4.8551 1.32217C4.76252 1.23099 4.64926 1.16357 4.52498 1.12564L1.2222 0.11064C1.12064 0.0794327 1.01394 0.068534 0.908168 0.078566C0.802401 0.0885979 0.699645 0.119364 0.605767 0.169108C0.416173 0.26957 0.274253 0.441234 0.211227 0.646334C0.148201 0.851435 0.169233 1.07317 0.269695 1.26277C0.370157 1.45236 0.541821 1.59428 0.746922 1.65731L3.63887 2.54342L7.33637 14.224L6.01525 15.3034L5.91053 15.4081C5.58375 15.7847 5.39852 16.2635 5.38676 16.762C5.375 17.2604 5.53743 17.7474 5.84609 18.139C6.06565 18.406 6.34465 18.6179 6.66078 18.7578C6.9769 18.8977 7.32138 18.9616 7.66664 18.9445H21.1114C21.325 18.9445 21.5299 18.8597 21.681 18.7086C21.8321 18.5575 21.9169 18.3526 21.9169 18.139C21.9169 17.9253 21.8321 17.7204 21.681 17.5694C21.5299 17.4183 21.325 17.3334 21.1114 17.3334H7.53776C7.44499 17.3302 7.35461 17.3032 7.27535 17.2549C7.19609 17.2066 7.13062 17.1387 7.08527 17.0577C7.03992 16.9767 7.01622 16.8854 7.01646 16.7926C7.0167 16.6998 7.04087 16.6086 7.08664 16.5279L9.02803 14.9167H21.4658C21.652 14.9213 21.8341 14.8612 21.9809 14.7466C22.1278 14.6321 22.2304 14.4701 22.2714 14.2884L24.825 3.01064C24.8495 2.89055 24.8462 2.76645 24.8155 2.64779C24.7848 2.52913 24.7274 2.41905 24.6478 2.32592Z" fill="#272727"/>
+                </svg>
+                </i
+            ></span>
+            <div class="user">
+              <img src="./assets/user.png" alt="user" />
+              <h3 class="user-name">Anne Doe</h3>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="ad-slug-section">
+        <h3>
+          Invite Friends and get 50% off on your next purchase
+          <span><a href="#">Invite Now</a></span>
+        </h3>
+        <span class="ad-close-icon"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+      <div class="hero-section">
+        <div class="hero-slide-wrapper">
+          <div class="hero-slider">
+            <div class="hero-slide fade">
+                <img class="hero-img" src="https://i.ibb.co/HHkXJ8w/hero-img.png" data-src="https://i.ibb.co/QK1X5wS/hero-img.png" alt="opening image" />
+                <div class="hero-headline">
+                  <div class="hero-title">
+                    <h1><img src="./assets/brand1.png" alt="Prada"></h1>
+                    <h3>Big Fashion Festival</h3>
+                    <h3>50% - 80% off</h3>
+                    <button class="btn">Explore</button>
+                  </div>
+                  <img class="hero-img" src="https://i.ibb.co/tP5ZfGK/model3.png" data-src="https://i.ibb.co/R4WhnFb/model3.png" alt="" />
+                </div>
+              </div>
+            <div class="hero-slide reverse-grid fade">
+                <img class="hero-img" src="https://i.ibb.co/HHkXJ8w/hero-img.png" data-src="https://i.ibb.co/QK1X5wS/hero-img.png" alt="opening image" />
+                <div class="hero-headline">
+                  <div class="hero-title">
+                    <h1><img src="./assets/brand1.png" alt="Prada"></h1>
+                    <h3>Big Fashion Festival</h3>
+                    <h3>50% - 80% off</h3>
+                    <button class="btn">Explore</button>
+                  </div>
+                  <img class="hero-img" src="https://i.ibb.co/tP5ZfGK/model3.png" data-src="https://i.ibb.co/R4WhnFb/model3.png" alt="" />
+                </div>
+              </div>
+            <div class="hero-slide fade">
+                <img class="hero-img" src="https://i.ibb.co/HHkXJ8w/hero-img.png" data-src="https://i.ibb.co/QK1X5wS/hero-img.png" alt="opening image" />
+                <div class="hero-headline">
+                  <div class="hero-title">
+                    <h1><img src="./assets/brand1.png" alt="Prada"></h1>
+                    <h3>Big Fashion Festival</h3>
+                    <h3>50% - 80% off</h3>
+                    <button class="btn">Explore</button>
+                  </div>
+                  <img class="hero-img" src="https://i.ibb.co/tP5ZfGK/model3.png" data-src="https://i.ibb.co/R4WhnFb/model3.png" alt="" />
+                </div>
+              </div>
+            <div class="hero-slide reverse-grid fade">
+                <img class="hero-img" src="https://i.ibb.co/HHkXJ8w/hero-img.png" data-src="https://i.ibb.co/QK1X5wS/hero-img.png" alt="opening image" />
+                <div class="hero-headline">
+                  <div class="hero-title">
+                    <h1><img src="./assets/brand1.png" alt="Prada"></h1>
+                    <h3>Big Fashion Festival</h3>
+                    <h3>50% - 80% off</h3>
+                    <button class="btn">Explore</button>
+                  </div>
+                  <img class="hero-img" src="https://i.ibb.co/tP5ZfGK/model3.png" data-src="https://i.ibb.co/R4WhnFb/model3.png" alt="" />
+                </div>
+              </div>
+            <div class="hero-slide fade">
+                <img class="hero-img" src="https://i.ibb.co/HHkXJ8w/hero-img.png" data-src="https://i.ibb.co/QK1X5wS/hero-img.png" alt="opening image" />
+                <div class="hero-headline">
+                  <div class="hero-title">
+                    <h1><img src="./assets/brand1.png" alt="Prada"></h1>
+                    <h3>Big Fashion Festival</h3>
+                    <h3>50% - 80% off</h3>
+                    <button class="btn">Explore</button>
+                  </div>
+                  <img class="hero-img" src="https://i.ibb.co/tP5ZfGK/model3.png" data-src="https://i.ibb.co/R4WhnFb/model3.png" alt="" />
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="hero-pagination">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </header>
+    <!-- header end  -->
+    <!-- Trending Now  -->
+    <section id="trends">
+      <h1 class="trends-heading heading">Trending Now</h1>
+      <div class="trends-row">
+        <ul class="trends-list">
+          <li class="trends-item shadow">
+            <img src="./assets/model4.png" alt="levis product" />
+            <div class="trends-price">
+              <h3 class="trends-product-title">Womens Denim Jacket</h3>
+              <h5 class="trends-brand">
+                Brand Name <span>4.4<i class="fa-solid fa-star"></i></span>
+              </h5>
+              <div class="trends-product-price">
+                <h3>Rs.700</h3>
+                <strike>Rs. 1000</strike>
+                <h4>(30% off)</h4>
+              </div>
+            </div>
+          </li>
+          <li class="trends-item shadow">
+            <img src="./assets/model7.png" alt="levis product" />
+            <div class="trends-price">
+              <h3 class="trends-product-title">Womens Denim Jacket</h3>
+              <h5 class="trends-brand">
+                Brand Name <span>4.4<i class="fa-solid fa-star"></i></span>
+              </h5>
+              <div class="trends-product-price">
+                <h3>Rs.700</h3>
+                <strike>Rs. 1000</strike>
+                <h4>(30% off)</h4>
+              </div>
+            </div>
+          </li>
+          <li class="trends-item shadow">
+            <img src="./assets/model8.png" alt="levis product" />
+            <div class="trends-price">
+              <h3 class="trends-product-title">Womens Denim Jacket</h3>
+              <h5 class="trends-brand">
+                Brand Name <span>4.4<i class="fa-solid fa-star"></i></span>
+              </h5>
+              <div class="trends-product-price">
+                <h3>Rs.700</h3>
+                <strike>Rs. 1000</strike>
+                <h4>(30% off)</h4>
+              </div>
+            </div>
+          </li>
+          <li class="trends-item shadow">
+            <img src="./assets/model9.png" alt="levis product" />
+            <div class="trends-price">
+              <h3 class="trends-product-title">Womens Denim Jacket</h3>
+              <h5 class="trends-brand">
+                Brand Name <span>4.4<i class="fa-solid fa-star"></i></span>
+              </h5>
+              <div class="trends-product-price">
+                <h3>Rs.700</h3>
+                <strike>Rs. 1000</strike>
+                <h4>(30% off)</h4>
+              </div>
+            </div>
+          </li>
+          <li class="trends-item shadow">
+            <img src="./assets/model6.png" alt="levis product" />
+            <div class="trends-price">
+              <h3 class="trends-product-title">Womens Denim Jacket</h3>
+              <h5 class="trends-brand">
+                Brand Name <span>4.4<i class="fa-solid fa-star"></i></span>
+              </h5>
+              <div class="trends-product-price">
+                <h3>Rs.700</h3>
+                <strike>Rs. 1000</strike>
+                <h4>(30% off)</h4>
+              </div>
+            </div>
+          </li>
+          <li class="trends-item shadow">
+            <img src="./assets/model5.png" alt="levis product" />
+            <div class="trends-price">
+              <h3 class="trends-product-title">Womens Denim Jacket</h3>
+              <h5 class="trends-brand">
+                Brand Name <span>4.4<i class="fa-solid fa-star"></i></span>
+              </h5>
+              <div class="trends-product-price">
+                <h3>Rs.700</h3>
+                <strike>Rs. 1000</strike>
+                <h4>(30% off)</h4>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Trending end  -->
+    <!-- deals of the day  -->
+    <section id="deals">
+      <h1 class="deals-heading heading">Deals of the Day</h1>
+      <div class="deals-row">
+        <ul class="deals-list">
+          <li class="deals-item shadow">
+            <img src="./assets/model4.png" alt="levis product" />
+            <div class="deals-price">
+              <img src="./assets/brand.png" alt="levis" />
+              <h3>Best of Styles</h3>
+              <h5>Under Rs.799</h5>
+            </div>
+          </li>
+          <li class="deals-item shadow">
+            <img src="./assets/model5.png" alt="levis product" />
+            <div class="deals-price">
+              <img src="./assets/brand.png" alt="levis" />
+              <h3>Best of Styles</h3>
+              <h5>Under Rs.799</h5>
+            </div>
+          </li>
+          <li class="deals-item shadow">
+            <img src="./assets/model6.png" alt="levis product" />
+            <div class="deals-price">
+              <img src="./assets/brand.png" alt="levis" />
+              <h3>Best of Styles</h3>
+              <h5>Under Rs.799</h5>
+            </div>
+          </li>
+          <li class="deals-item shadow">
+            <img src="./assets/model7.png" alt="levis product" />
+            <div class="deals-price">
+              <img src="./assets/brand.png" alt="levis" />
+              <h3>Best of Styles</h3>
+              <h5>Under Rs.799</h5>
+            </div>
+          </li>
+          <li class="deals-item shadow">
+            <img src="./assets/model8.png" alt="levis product" />
+            <div class="deals-price">
+              <img src="./assets/brand.png" alt="levis" />
+              <h3>Best of Styles</h3>
+              <h5>Under Rs.799</h5>
+            </div>
+          </li>
+          <li class="deals-item shadow">
+            <img src="./assets/model9.png" alt="levis product" />
+            <div class="deals-price">
+              <img src="./assets/brand.png" alt="levis" />
+              <h3>Best of Styles</h3>
+              <h5>Under Rs.799</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- deals end  -->
+    <!-- trending offers  -->
+    <section id="trending">
+      <h1 class="trending-heading heading">Trending Offers</h1>
+      <div class="trendingWrapper">
+        <div class="buttons">
+          <button class="tr-prev-button nvg-btn nvg-btn-left">
+            <span><i class="fa-solid fa-angle-left"></i></span>
+          </button>
+          <button class="tr-next-button nvg-btn nvg-btn-right">
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+        <div class="trending-slider">
+          <div class="trSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide shadow tr-slide">
+                <blockquote class="offer_item">
+                  <div class="offer_text">
+                    <img src="./assets/brand.png" alt="brand levis" />
+                    <h3 class="offer-title">Min 60% off</h3>
+                    <button class="btn">Explore</button>
+                  </div>
+                  <div class="tr-model">
+                    <img src="./assets/model1.png" alt="model" />
+                  </div>
+                </blockquote>
+              </div>
+              <div class="swiper-slide shadow tr-slide">
+                <blockquote class="offer_item">
+                  <div class="offer_text">
+                    <img src="./assets/brand.png" alt="brand levis" />
+                    <h3 class="offer-title">Min 60% off</h3>
+                    <button class="btn">Explore</button>
+                  </div>
+                  <div class="tr-model">
+                    <img src="./assets/model2.png" alt="model" />
+                  </div>
+                </blockquote>
+              </div>
+              <div class="swiper-slide shadow tr-slide">
+                <blockquote class="offer_item">
+                  <div class="offer_text">
+                    <img src="./assets/brand.png" alt="brand levis" />
+                    <h3 class="offer-title">Min 60% off</h3>
+                    <button class="btn">Explore</button>
+                  </div>
+                  <div class="tr-model">
+                    <img src="./assets/cate3.png" alt="model" />
+                  </div>
+                </blockquote>
+              </div>
+              <div class="swiper-slide shadow tr-slide">
+                <blockquote class="offer_item">
+                  <div class="offer_text">
+                    <img src="./assets/brand.png" alt="brand levis" />
+                    <h3 class="offer-title">Min 60% off</h3>
+                    <button class="btn">Explore</button>
+                  </div>
+                  <div class="tr-model">
+                    <img src="./assets/cate4.png" alt="model" />
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- offers end  -->
+    <!-- Festival Banner  -->
+    <main id="festival-banner" aria-details="festival banner">
+      <h1 class="banner-heading" aria-label="banner heading">Forever 21</h1>
+      <h3 class="banner-title" aria-label="banner title">
+        Big Fashion Festival
+      </h3>
+      <h3 class="banner-title" aria-label="banner discount">70% - 80% off</h3>
+      <button class="btn banner-btn" aria-current="true">Explore</button>
+    </main>
+    <!-- banner end  -->
+    <!-- shop by categories  -->
+    <section id="categories" aria-details="categories">
+      <h1 class="category-heading heading" aria-label="category heading">
+        Shop by Categories
+      </h1>
+      <ul class="category-list" aria-label="category list">
+        <li class="category-item" aria-current="true">
+          <img
+            class="category-img"
+            src="./assets/cate1.png"
+            alt="Womens Pants"
+          />
+          <div class="titleWrapper">
+            <h3>Womens Pants</h3>
+            <h6>
+              Explore <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </h6>
+          </div>
+        </li>
+        <li class="category-item" aria-current="true">
+          <img
+            class="category-img"
+            src="./assets/cate2.png"
+            alt="Mens Jacket"
+          />
+          <div class="titleWrapper">
+            <h3>Mens Jacket</h3>
+            <h6>
+              Explore <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </h6>
+          </div>
+        </li>
+        <li class="category-item" aria-current="true">
+          <img class="category-img" src="./assets/cate3.png" alt="Sweater" />
+          <div class="titleWrapper">
+            <h3>Sweater</h3>
+            <h6>
+              Explore <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </h6>
+          </div>
+        </li>
+        <li class="category-item" aria-current="true">
+          <img
+            class="category-img"
+            src="./assets/cate4.png"
+            alt="Womens Tops"
+          />
+          <div class="titleWrapper">
+            <h3>Womens Tops</h3>
+            <h6>
+              Explore <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </h6>
+          </div>
+        </li>
+        <li class="category-item" aria-current="true">
+          <img class="category-img" src="./assets/cate5.png" alt="Pants" />
+          <div class="titleWrapper">
+            <h3>Pants</h3>
+            <h6>
+              Explore <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </h6>
+          </div>
+        </li>
+        <li class="category-item" aria-current="true">
+          <img
+            class="category-img"
+            src="./assets/model4.png"
+            alt="Womens Jackets"
+          />
+          <div class="titleWrapper">
+            <h3>Womens Jackets</h3>
+            <h6>
+              Explore <span><i class="fa-solid fa-arrow-right-long"></i></span>
+            </h6>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- category end  -->
+    <!-- feedback  -->
+    <section id="feedback">
+      <h1 class="feedback-heading heading">What Our Customer Says</h1>
+      <div id="fdLoader" class="fdLoader shadow loaderHidden">
+        <div class="fdLoader-img skeleton"></div>
+        <div class="line skeleton"></div>
+        <div class="fdLoader-comment">
+          <span class="line skeleton"></span>
+          <span class="line skeleton"></span>
+          <span class="line skeleton"></span>
+        </div>
+      </div>
+      <div class="feedbackWrapper">
+        <div class="buttons">
+          <button class="prev-button nvg-btn nvg-btn-left">
+            <span><i class="fa-solid fa-angle-left"></i></span>
+          </button>
+          <button class="next-button nvg-btn nvg-btn-right">
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+        <div class="feedback-slider">
+          <div class="fdswiper" id="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide shadow">
+                <blockquote class="customer">
+                  <img src="./assets/reviewer.png" alt="customer review" />
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>4.4</span>
+                  </div>
+                  <p>
+                    The customer care was super active. Each time I knocked for
+                    information, they replied me so early. I received the
+                    product intact. The delivery is little bit late but I am
+                    happy to have my desired product. I will recommend to buy
+                    from here. Thank you.
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide shadow">
+                <blockquote class="customer">
+                  <img src="./assets/reviewer.png" alt="customer review" />
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>4.4</span>
+                  </div>
+                  <p>
+                    The customer care was super active. Each time I knocked for
+                    information, they replied me so early. I received the
+                    product intact. The delivery is little bit late but I am
+                    happy to have my desired product. I will recommend to buy
+                    from here. Thank you.
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide shadow">
+                <blockquote class="customer">
+                  <img src="./assets/reviewer.png" alt="customer review" />
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>4.4</span>
+                  </div>
+                  <p>
+                    The customer care was super active. Each time I knocked for
+                    information, they replied me so early. I received the
+                    product intact. The delivery is little bit late but I am
+                    happy to have my desired product. I will recommend to buy
+                    from here. Thank you.
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide shadow">
+                <blockquote class="customer">
+                  <img src="./assets/reviewer.png" alt="customer review" />
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>4.4</span>
+                  </div>
+                  <p>
+                    The customer care was super active. Each time I knocked for
+                    information, they replied me so early. I received the
+                    product intact. The delivery is little bit late but I am
+                    happy to have my desired product. I will recommend to buy
+                    from here. Thank you.
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide shadow">
+                <blockquote class="customer">
+                  <img src="./assets/reviewer.png" alt="customer review" />
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>4.4</span>
+                  </div>
+                  <p>
+                    The customer care was super active. Each time I knocked for
+                    information, they replied me so early. I received the
+                    product intact. The delivery is little bit late but I am
+                    happy to have my desired product. I will recommend to buy
+                    from here. Thank you.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- feedback end  -->
+    <!-- footer  -->
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="./assets/logo1.png" alt="logo" />
+        <p class="logo-heading">Globex</p>
+      </div>
+      <div class="ourself">
+        <div class="catelog">
+          <div class="catelog-wrapper">
+            <h3 class="catelog_heading">Women</h3>
+            <ul class="catelog_list">
+              <li><a href="#">All Women</a></li>
+              <li><a href="#">Skirts</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Tops</a></li>
+              <li><a href="#">Jackets</a></li>
+            </ul>
+          </div>
+          <div class="catelog-wrapper">
+            <h3 class="catelog_heading">Men</h3>
+            <ul class="catelog_list">
+              <li><a href="#">All Men</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Shorts</a></li>
+              <li><a href="#">Jackets</a></li>
+            </ul>
+          </div>
+          <div class="catelog-wrapper">
+            <h3 class="catelog_heading">Kids</h3>
+            <ul class="catelog_list">
+              <li><a href="#">All Kids</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Shorts</a></li>
+              <li><a href="#">Jackets</a></li>
+            </ul>
+          </div>
+          <div class="catelog-wrapper">
+            <h3 class="catelog_heading">Shopping</h3>
+            <ul class="catelog_list">
+              <li><a href="#">Your cart</a></li>
+              <li><a href="#">Your orders</a></li>
+              <li><a href="#">Compared items</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Shipping Details</a></li>
+            </ul>
+          </div>
+          <div class="catelog-wrapper">
+            <h3 class="catelog_heading">More links</h3>
+            <ul class="catelog_list">
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Gift center</a></li>
+              <li><a href="#">Buying guides</a></li>
+              <li><a href="#">New arrivals</a></li>
+              <li><a href="#">Clearance</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3 class="catelog_heading">Stay In Touch</h3>
+          <p>
+            Stay in touch to get special offers, free giveaways and once in a
+            lifetime deals
+          </p>
+          <div class="subscribe">
+            <span><i class="fa-regular fa-envelope"></i></span>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="off"
+              placeholder="Enter your email"
+              aria-placeholder="Enter your email"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="extra">
+        <h3>Terms & Conditions</h3>
+        <h3>Privacy Policy</h3>
+        <div class="media-icons">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end  -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
